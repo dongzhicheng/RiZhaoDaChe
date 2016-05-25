@@ -50,7 +50,7 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
     }
     return self;
 }
-//
+///
 #pragma mark - Managing the view
 
 - (void)viewDidLoad
