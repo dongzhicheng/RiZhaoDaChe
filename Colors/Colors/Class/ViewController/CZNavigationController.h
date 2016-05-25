@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CZNavigationController : UINavigationController
+@interface ICSNavigationController : UINavigationController
 
 @end

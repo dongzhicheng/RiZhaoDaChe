@@ -21,12 +21,47 @@
 //  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 //  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+/*
+ //    NSArray *colors = @[[UIColor colorWithRed:237.0f/255.0f green:195.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
+ //                        [UIColor colorWithRed:237.0f/255.0f green:147.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
+ //                        [UIColor colorWithRed:237.0f/255.0f green:9.0f/255.0f blue:0.0f/255.0f alpha:1.0f]//暂时提供左侧抽屉数据的数组
+ //                        ];
+ self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+ self.window.backgroundColor = [UIColor blackColor];
+ 
+ 
+ //    ICSColorsViewController *colorsVC = [[ICSColorsViewController alloc] initWithColors:colors];
+ 
+ ICSPlainColorViewController *plainColorVC = [[ICSPlainColorViewController alloc] init];
+ UINavigationController * navColorVC = [[UINavigationController alloc] initWithRootViewController:plainColorVC];
+ 
+ //    plainColorVC.view.backgroundColor = colors[0];
+ UIStoryboard * fistftoryBord  = [UIStoryboard storyboardWithName:@"ICSFistViewController" bundle:nil];
+ ICSFistViewController *icsFistViewController = [fistftoryBord instantiateViewControllerWithIdentifier:@"ICSFistViewController"];
+ ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:navColorVC
+ centerViewController:icsFistViewController];
+ UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:drawer];
+ 
+ self.window.rootViewController = nav;
+ 
+ 
+ [self.window makeKeyAndVisible];
+ return YES;
+ 
+ */
+//    ICSPlainColorViewController *plainColorVC = [[ICSPlainColorViewController alloc] init];
+//    UINavigationController * navColorVC = [[UINavigationController alloc] initWithRootViewController:plainColorVC];
+
+
+//    ICSMainleftTableViewController * leftInterface = [[ICSMainleftTableViewController alloc] init];
+//    UINavigationController * leftMainInterNav = [[UINavigationController alloc] initWithRootViewController:leftInterface];
 
 #import "ICSAppDelegate.h"
 #import "ICSDrawerController.h"
 #import "ICSColorsViewController.h"
 #import "ICSPlainColorViewController.h"
 #import "ICSFistViewController.h"
+#import "ICSMainleftTableViewController.h"
 
 @implementation ICSAppDelegate
 
@@ -34,20 +69,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];
-    NSArray *colors = @[[UIColor colorWithRed:237.0f/255.0f green:195.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
-                        [UIColor colorWithRed:237.0f/255.0f green:147.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
-                        [UIColor colorWithRed:237.0f/255.0f green:9.0f/255.0f blue:0.0f/255.0f alpha:1.0f]//暂时提供左侧抽屉数据的数组
-                        ];
-    
-    ICSColorsViewController *colorsVC = [[ICSColorsViewController alloc] initWithColors:colors];
-    ICSPlainColorViewController *plainColorVC = [[ICSPlainColorViewController alloc] init];
-    plainColorVC.view.backgroundColor = colors[0];
+    UIStoryboard *leftMainInterce1 = [UIStoryboard storyboardWithName:@"ICSMainleftTableViewController" bundle:nil];
+    ICSMainleftTableViewController * leftInterface = [leftMainInterce1 instantiateViewControllerWithIdentifier:@"ICSMainleftTableViewController"];
     UIStoryboard * fistftoryBord  = [UIStoryboard storyboardWithName:@"ICSFistViewController" bundle:nil];
     ICSFistViewController *icsFistViewController = [fistftoryBord instantiateViewControllerWithIdentifier:@"ICSFistViewController"];
-    ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:colorsVC
+    ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:leftInterface
                                                                      centerViewController:icsFistViewController];
-    self.window.rootViewController = drawer;
-    
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:drawer];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -31,8 +31,8 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
 
 @interface ICSColorsViewController ()
 
-@property(nonatomic, strong) NSArray *colors;
-@property(nonatomic, assign) NSInteger previousRow;
+//@property(nonatomic, strong) NSArray *colors;
+//@property(nonatomic, assign) NSInteger previousRow;
 
 @end
 
@@ -40,16 +40,16 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
 
 @implementation ICSColorsViewController
 
-- (id)initWithColors:(NSArray *)colors
-{
-    NSParameterAssert(colors);
-    
-    self = [super initWithStyle:UITableViewStyleGrouped];
-    if (self) {
-        _colors = colors;
-    }
-    return self;
-}
+//- (id)initWithColors:(NSArray *)colors
+//{
+//    NSParameterAssert(colors);
+//    
+//    self = [super initWithStyle:UITableViewStyleGrouped];
+//    if (self) {
+//        _colors = colors;
+//    }
+//    return self;
+//}
 ///
 #pragma mark - Managing the view
 
@@ -84,47 +84,50 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSParameterAssert(self.colors);
-    return self.colors.count;
+//    NSParameterAssert(self.colors);
+//    return self.colors.count;
+    return nil;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSParameterAssert(self.colors);
+//    NSParameterAssert(self.colors);
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kICSColorsViewControllerCellReuseId
+//                                                            forIndexPath:indexPath];
+//    cell.textLabel.text = [NSString stringWithFormat:@"Color %ld", (long)indexPath.row];
+//    cell.textLabel.textColor = [UIColor whiteColor];
+//
+//    cell.backgroundColor = self.colors[indexPath.row];
+//    cell.imageView.image  =  [UIImage imageNamed:@""];//设置cell的背景颜色
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kICSColorsViewControllerCellReuseId
-                                                            forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"Color %ld", (long)indexPath.row];
-    cell.textLabel.textColor = [UIColor whiteColor];
-
-    cell.backgroundColor = self.colors[indexPath.row];
-    cell.imageView.image  =  [UIImage imageNamed:@""];//设置cell的背景颜色
+//    return cell;
+    return  nil;
     
-    return cell;
 }
 
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == self.previousRow) {
-        // Close the drawer without no further actions on the center view controller
-        [self.drawer close];
-    }
-    else {
-        // Reload the current center view controller and update its background color
-        typeof(self) __weak weakSelf = self;
-        [self.drawer reloadCenterViewControllerUsingBlock:^(){
-            NSParameterAssert(weakSelf.colors);
-            weakSelf.drawer.centerViewController.view.backgroundColor = weakSelf.colors[indexPath.row];
-        }];
-        
-        
-        // Replace the current center view controller with a new one
-//        ICSPlainColorViewController *center = [[ICSPlainColorViewController alloc] init];
-//        center.view.backgroundColor = [UIColor redColor];
-//        [self.drawer replaceCenterViewControllerWithViewController:center];
-    }
-    self.previousRow = indexPath.row;
+//    if (indexPath.row == self.previousRow) {
+//        // Close the drawer without no further actions on the center view controller
+//        [self.drawer close];
+//    }
+//    else {
+//        // Reload the current center view controller and update its background color
+//        typeof(self) __weak weakSelf = self;
+//        [self.drawer reloadCenterViewControllerUsingBlock:^(){
+//            NSParameterAssert(weakSelf.colors);
+//            weakSelf.drawer.centerViewController.view.backgroundColor = weakSelf.colors[indexPath.row];
+//        }];
+//        
+//        
+//        // Replace the current center view controller with a new one
+////        ICSPlainColorViewController *center = [[ICSPlainColorViewController alloc] init];
+////        center.view.backgroundColor = [UIColor redColor];
+////        [self.drawer replaceCenterViewControllerWithViewController:center];
+//    }
+//    self.previousRow = indexPath.row;
 }
 
 #pragma mark - ICSDrawerControllerPresenting
