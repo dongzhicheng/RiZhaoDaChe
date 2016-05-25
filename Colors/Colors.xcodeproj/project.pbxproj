@@ -18,6 +18,8 @@
 		5F0B654718A3AD1C00DFB3C1 /* ICSColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B654618A3AD1C00DFB3C1 /* ICSColorsViewController.m */; };
 		5F0B654A18A3E2C600DFB3C1 /* ICSPlainColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */; };
 		5F0B654E18A3F09800DFB3C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B654D18A3F09800DFB3C1 /* Images.xcassets */; };
+		C84E3A211CF432F5000B81F2 /* ICSFistViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */; };
+		C84E3A251CF44559000B81F2 /* ICSFistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E3A231CF44559000B81F2 /* ICSFistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		5F0B654818A3E2C600DFB3C1 /* ICSPlainColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSPlainColorViewController.h; sourceTree = "<group>"; };
 		5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSPlainColorViewController.m; sourceTree = "<group>"; };
 		5F0B654D18A3F09800DFB3C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ICSFistViewController.storyboard; sourceTree = "<group>"; };
+		C84E3A221CF44559000B81F2 /* ICSFistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSFistViewController.h; sourceTree = "<group>"; };
+		C84E3A231CF44559000B81F2 /* ICSFistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSFistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,14 @@
 		5F0B64FD18A3A78800DFB3C1 = {
 			isa = PBXGroup;
 			children = (
+				C8C471341CF543CA00F6330A /* CarOwnerinterface (车主界面) */,
+				C8C471301CF5439300F6330A /* travelInformation(出行信息) */,
+				C8C4712C1CF5438D00F6330A /* setUp(设置) */,
+				C8C471281CF5438700F6330A /* EvidenceCollection Complain(取证投诉) */,
+				C8C471241CF5437600F6330A /* BusInquiry(乘车查询) */,
+				C84E3A181CF42F9F000B81F2 /* Home */,
+				C84E3A191CF42F9F000B81F2 /* Model */,
+				C84E3A1C1CF42F9F000B81F2 /* ViewController */,
 				5F0B650F18A3A78800DFB3C1 /* Colors */,
 				5F0B650818A3A78800DFB3C1 /* Frameworks */,
 				5F0B650718A3A78800DFB3C1 /* Products */,
@@ -92,6 +105,9 @@
 				5F0B654618A3AD1C00DFB3C1 /* ICSColorsViewController.m */,
 				5F0B654818A3E2C600DFB3C1 /* ICSPlainColorViewController.h */,
 				5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */,
+				C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */,
+				C84E3A221CF44559000B81F2 /* ICSFistViewController.h */,
+				C84E3A231CF44559000B81F2 /* ICSFistViewController.m */,
 				5F0B653818A3A82300DFB3C1 /* ICSDrawerController */,
 				5F0B654D18A3F09800DFB3C1 /* Images.xcassets */,
 				5F0B651018A3A78800DFB3C1 /* Supporting Files */,
@@ -120,6 +136,326 @@
 			);
 			name = ICSDrawerController;
 			path = ../../ICSDrawerController;
+			sourceTree = "<group>";
+		};
+		C84E3A181CF42F9F000B81F2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			path = Colors/Class/Home;
+			sourceTree = "<group>";
+		};
+		C84E3A191CF42F9F000B81F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = Colors/Class/Model;
+			sourceTree = "<group>";
+		};
+		C84E3A1C1CF42F9F000B81F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			path = Colors/Class/ViewController;
+			sourceTree = "<group>";
+		};
+		C8C471241CF5437600F6330A /* BusInquiry(乘车查询) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471251CF5437600F6330A /* Controller */,
+				C8C471261CF5437600F6330A /* Model */,
+				C8C471271CF5437600F6330A /* View */,
+			);
+			name = "BusInquiry(乘车查询)";
+			path = "Colors/Class/BusInquiry(乘车查询)";
+			sourceTree = "<group>";
+		};
+		C8C471251CF5437600F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C471261CF5437600F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C471271CF5437600F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C471281CF5438700F6330A /* EvidenceCollection Complain(取证投诉) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471291CF5438700F6330A /* Controller */,
+				C8C4712A1CF5438700F6330A /* Model */,
+				C8C4712B1CF5438700F6330A /* View */,
+			);
+			name = "EvidenceCollection Complain(取证投诉)";
+			path = "Colors/Class/EvidenceCollection Complain(取证投诉)";
+			sourceTree = "<group>";
+		};
+		C8C471291CF5438700F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C4712A1CF5438700F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C4712B1CF5438700F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C4712C1CF5438D00F6330A /* setUp(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C4712D1CF5438D00F6330A /* Controller */,
+				C8C4712E1CF5438D00F6330A /* Model */,
+				C8C4712F1CF5438D00F6330A /* View */,
+			);
+			name = "setUp(设置)";
+			path = "Colors/Class/setUp(设置)";
+			sourceTree = "<group>";
+		};
+		C8C4712D1CF5438D00F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C4712E1CF5438D00F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C4712F1CF5438D00F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C471301CF5439300F6330A /* travelInformation(出行信息) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471311CF5439300F6330A /* Controller */,
+				C8C471321CF5439300F6330A /* Model */,
+				C8C471331CF5439300F6330A /* View */,
+			);
+			name = "travelInformation(出行信息)";
+			path = "Colors/Class/travelInformation(出行信息)";
+			sourceTree = "<group>";
+		};
+		C8C471311CF5439300F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C471321CF5439300F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C471331CF5439300F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C471341CF543CA00F6330A /* CarOwnerinterface (车主界面) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471351CF543CA00F6330A /* breakRulusNotes(车主界面的) */,
+				C8C471391CF543CA00F6330A /* complaintNotes(车主界面的) */,
+				C8C4713D1CF543CA00F6330A /* QualificationsApplication(车主界面的) */,
+				C8C471411CF543CA00F6330A /* reportJuBao(车主界面) */,
+				C8C471451CF543CA00F6330A /* writeAgreement(车主界面的) */,
+			);
+			name = "CarOwnerinterface (车主界面)";
+			path = "Colors/Class/CarOwnerinterface (车主界面)";
+			sourceTree = "<group>";
+		};
+		C8C471351CF543CA00F6330A /* breakRulusNotes(车主界面的) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471361CF543CA00F6330A /* Controller */,
+				C8C471371CF543CA00F6330A /* Model */,
+				C8C471381CF543CA00F6330A /* View */,
+			);
+			path = "breakRulusNotes(车主界面的)";
+			sourceTree = "<group>";
+		};
+		C8C471361CF543CA00F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C471371CF543CA00F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C471381CF543CA00F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C471391CF543CA00F6330A /* complaintNotes(车主界面的) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C4713A1CF543CA00F6330A /* Controller */,
+				C8C4713B1CF543CA00F6330A /* Model */,
+				C8C4713C1CF543CA00F6330A /* View */,
+			);
+			path = "complaintNotes(车主界面的)";
+			sourceTree = "<group>";
+		};
+		C8C4713A1CF543CA00F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C4713B1CF543CA00F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C4713C1CF543CA00F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C4713D1CF543CA00F6330A /* QualificationsApplication(车主界面的) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C4713E1CF543CA00F6330A /* Controller */,
+				C8C4713F1CF543CA00F6330A /* Model */,
+				C8C471401CF543CA00F6330A /* View */,
+			);
+			path = "QualificationsApplication(车主界面的)";
+			sourceTree = "<group>";
+		};
+		C8C4713E1CF543CA00F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C4713F1CF543CA00F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C471401CF543CA00F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C471411CF543CA00F6330A /* reportJuBao(车主界面) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471421CF543CA00F6330A /* Controller */,
+				C8C471431CF543CA00F6330A /* Model */,
+				C8C471441CF543CA00F6330A /* View */,
+			);
+			path = "reportJuBao(车主界面)";
+			sourceTree = "<group>";
+		};
+		C8C471421CF543CA00F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C471431CF543CA00F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C471441CF543CA00F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8C471451CF543CA00F6330A /* writeAgreement(车主界面的) */ = {
+			isa = PBXGroup;
+			children = (
+				C8C471461CF543CA00F6330A /* Controller */,
+				C8C471471CF543CA00F6330A /* Model */,
+				C8C471481CF543CA00F6330A /* View */,
+			);
+			path = "writeAgreement(车主界面的)";
+			sourceTree = "<group>";
+		};
+		C8C471461CF543CA00F6330A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8C471471CF543CA00F6330A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8C471481CF543CA00F6330A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +487,11 @@
 				CLASSPREFIX = ICS;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "ice cream studios s.r.l.";
+				TargetAttributes = {
+					5F0B650518A3A78800DFB3C1 = {
+						DevelopmentTeam = YDKQ328KHE;
+					};
+				};
 			};
 			buildConfigurationList = 5F0B650118A3A78800DFB3C1 /* Build configuration list for PBXProject "Colors" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -175,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0B651418A3A78800DFB3C1 /* InfoPlist.strings in Resources */,
+				C84E3A211CF432F5000B81F2 /* ICSFistViewController.storyboard in Resources */,
 				5F0B654E18A3F09800DFB3C1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +534,7 @@
 				5F0B653D18A3A82300DFB3C1 /* ICSDrawerController.m in Sources */,
 				5F0B651618A3A78800DFB3C1 /* main.m in Sources */,
 				5F0B653E18A3A82300DFB3C1 /* ICSDropShadowView.m in Sources */,
+				C84E3A251CF44559000B81F2 /* ICSFistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +629,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udiosdasdfaea45sd.Colors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -300,9 +645,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.udiosdasdfaea45sd.Colors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

@@ -98,6 +98,7 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
     cell.textLabel.textColor = [UIColor whiteColor];
 
     cell.backgroundColor = self.colors[indexPath.row];
+    cell.imageView.image  =  [UIImage imageNamed:@""];//设置cell的背景颜色
     
     return cell;
 }
@@ -117,7 +118,8 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
             weakSelf.drawer.centerViewController.view.backgroundColor = weakSelf.colors[indexPath.row];
         }];
         
-//        // Replace the current center view controller with a new one
+        
+        // Replace the current center view controller with a new one
 //        ICSPlainColorViewController *center = [[ICSPlainColorViewController alloc] init];
 //        center.view.backgroundColor = [UIColor redColor];
 //        [self.drawer replaceCenterViewControllerWithViewController:center];

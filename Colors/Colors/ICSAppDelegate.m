@@ -26,6 +26,7 @@
 #import "ICSDrawerController.h"
 #import "ICSColorsViewController.h"
 #import "ICSPlainColorViewController.h"
+#import "ICSFistViewController.h"
 
 @implementation ICSAppDelegate
 
@@ -33,20 +34,23 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];
-    
     NSArray *colors = @[[UIColor colorWithRed:237.0f/255.0f green:195.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
                         [UIColor colorWithRed:237.0f/255.0f green:147.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
                         [UIColor colorWithRed:237.0f/255.0f green:9.0f/255.0f blue:0.0f/255.0f alpha:1.0f]
-                        ];
+                        ];//暂时提供左侧抽屉数据的数组
     
     ICSColorsViewController *colorsVC = [[ICSColorsViewController alloc] initWithColors:colors];
     ICSPlainColorViewController *plainColorVC = [[ICSPlainColorViewController alloc] init];
     plainColorVC.view.backgroundColor = colors[0];
     
-    ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:colorsVC
-                                                                     centerViewController:plainColorVC];
+    UIStoryboard * fistftoryBord  = [UIStoryboard storyboardWithName:@"ICSFistViewController" bundle:nil];
     
+    ICSFistViewController *icsFistViewController = [fistftoryBord instantiateViewControllerWithIdentifier:@"ICSFistViewController"];
+//    UINavigationController * icsfistVC = [[UINavigationController alloc] initWithRootViewController:@"icsFistViewController"];
+    ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:colorsVC
+                                                                     centerViewController:icsFistViewController];
     self.window.rootViewController = drawer;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
