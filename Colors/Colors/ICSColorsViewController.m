@@ -66,7 +66,7 @@ static NSString * const kICSColorsViewControllerCellReuseId = @"kICSColorsViewCo
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     // Even if this view controller hides the status bar, implementing this method is still needed to match the center view controller's
-    // status bar style to avoid a flicker when the drawer is dragged and then left to open.
+    // status bar style to/Users/dongzhicheng/Desktop/RZCX avoid a flicker when the drawer is dragged and then left to open.
     return UIStatusBarStyleLightContent;
 }
 
