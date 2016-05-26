@@ -22,40 +22,9 @@
 //  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /*
- //    NSArray *colors = @[[UIColor colorWithRed:237.0f/255.0f green:195.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
- //                        [UIColor colorWithRed:237.0f/255.0f green:147.0f/255.0f blue:0.0f/255.0f alpha:1.0f],
- //                        [UIColor colorWithRed:237.0f/255.0f green:9.0f/255.0f blue:0.0f/255.0f alpha:1.0f]//暂时提供左侧抽屉数据的数组
- //                        ];
- self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
- self.window.backgroundColor = [UIColor blackColor];
- 
- 
- //    ICSColorsViewController *colorsVC = [[ICSColorsViewController alloc] initWithColors:colors];
- 
- ICSPlainColorViewController *plainColorVC = [[ICSPlainColorViewController alloc] init];
- UINavigationController * navColorVC = [[UINavigationController alloc] initWithRootViewController:plainColorVC];
- 
- //    plainColorVC.view.backgroundColor = colors[0];
- UIStoryboard * fistftoryBord  = [UIStoryboard storyboardWithName:@"ICSFistViewController" bundle:nil];
- ICSFistViewController *icsFistViewController = [fistftoryBord instantiateViewControllerWithIdentifier:@"ICSFistViewController"];
- ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:navColorVC
- centerViewController:icsFistViewController];
- UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:drawer];
- 
- self.window.rootViewController = nav;
- 
- 
- [self.window makeKeyAndVisible];
- return YES;
+  AK:  QAbgrEkXcTktLiwc8qtFo6UVh27gCDYh 
  
  */
-//    ICSPlainColorViewController *plainColorVC = [[ICSPlainColorViewController alloc] init];
-//    UINavigationController * navColorVC = [[UINavigationController alloc] initWithRootViewController:plainColorVC];
-
-
-//    ICSMainleftTableViewController * leftInterface = [[ICSMainleftTableViewController alloc] init];
-//    UINavigationController * leftMainInterNav = [[UINavigationController alloc] initWithRootViewController:leftInterface];
-
 #import "ICSAppDelegate.h"
 #import "ICSDrawerController.h"
 #import "ICSColorsViewController.h"
@@ -68,7 +37,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blackColor];
+    self.window.backgroundColor = [UIColor redColor];
     UIStoryboard *leftMainInterce1 = [UIStoryboard storyboardWithName:@"ICSMainleftTableViewController" bundle:nil];
     ICSMainleftTableViewController * leftInterface = [leftMainInterce1 instantiateViewControllerWithIdentifier:@"ICSMainleftTableViewController"];
     UIStoryboard * fistftoryBord  = [UIStoryboard storyboardWithName:@"ICSFistViewController" bundle:nil];
@@ -80,5 +49,10 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
-
+- (void)applicationWillResignActive:(UIApplication *)application {
+    [BMKMapView willBackGround];//当应用即将后台时调用，停止一切调用opengl相关的操作
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [BMKMapView didForeGround];//当应用恢复前台状态时调用，回复地图的渲染和opengl相关的操作
+}
 @end

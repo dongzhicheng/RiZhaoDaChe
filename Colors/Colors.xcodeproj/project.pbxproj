@@ -18,6 +18,8 @@
 		5F0B654718A3AD1C00DFB3C1 /* ICSColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B654618A3AD1C00DFB3C1 /* ICSColorsViewController.m */; };
 		5F0B654A18A3E2C600DFB3C1 /* ICSPlainColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */; };
 		5F0B654E18A3F09800DFB3C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B654D18A3F09800DFB3C1 /* Images.xcassets */; };
+		C83E4E941CF6880700125794 /* mmController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C83E4E931CF6880700125794 /* mmController.mm */; };
+		C83E4E971CF6889C00125794 /* ICSDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E4E961CF6889C00125794 /* ICSDiTuViewController.m */; };
 		C84E3A211CF432F5000B81F2 /* ICSFistViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */; };
 		C84E3A251CF44559000B81F2 /* ICSFistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E3A231CF44559000B81F2 /* ICSFistViewController.m */; };
 		C874744B1CF57CBC000BCB18 /* CZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C874744A1CF57CBC000BCB18 /* CZNavigationController.m */; };
@@ -47,6 +49,10 @@
 		5F0B654818A3E2C600DFB3C1 /* ICSPlainColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSPlainColorViewController.h; sourceTree = "<group>"; };
 		5F0B654918A3E2C600DFB3C1 /* ICSPlainColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSPlainColorViewController.m; sourceTree = "<group>"; };
 		5F0B654D18A3F09800DFB3C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C83E4E921CF6880700125794 /* mmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmController.h; sourceTree = "<group>"; };
+		C83E4E931CF6880700125794 /* mmController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mmController.mm; sourceTree = "<group>"; };
+		C83E4E951CF6889C00125794 /* ICSDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDiTuViewController.h; sourceTree = "<group>"; };
+		C83E4E961CF6889C00125794 /* ICSDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDiTuViewController.m; sourceTree = "<group>"; };
 		C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ICSFistViewController.storyboard; sourceTree = "<group>"; };
 		C84E3A221CF44559000B81F2 /* ICSFistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSFistViewController.h; sourceTree = "<group>"; };
 		C84E3A231CF44559000B81F2 /* ICSFistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSFistViewController.m; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 				5F0B653A18A3A82300DFB3C1 /* ICSDrawerController.m */,
 				5F0B653B18A3A82300DFB3C1 /* ICSDropShadowView.h */,
 				5F0B653C18A3A82300DFB3C1 /* ICSDropShadowView.m */,
+				C83E4E921CF6880700125794 /* mmController.h */,
+				C83E4E931CF6880700125794 /* mmController.mm */,
 			);
 			name = ICSDrawerController;
 			path = ../../ICSDrawerController;
@@ -155,6 +163,8 @@
 		C84E3A181CF42F9F000B81F2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C83E4E951CF6889C00125794 /* ICSDiTuViewController.h */,
+				C83E4E961CF6889C00125794 /* ICSDiTuViewController.m */,
 			);
 			name = Home;
 			path = Colors/Class/Home;
@@ -563,8 +573,10 @@
 				C874747A1CF58548000BCB18 /* ICSMainleftTableViewController.m in Sources */,
 				C874744B1CF57CBC000BCB18 /* CZNavigationController.m in Sources */,
 				C87474511CF57CEC000BCB18 /* UIView+Ex.m in Sources */,
+				C83E4E941CF6880700125794 /* mmController.mm in Sources */,
 				5F0B651618A3A78800DFB3C1 /* main.m in Sources */,
 				5F0B653E18A3A82300DFB3C1 /* ICSDropShadowView.m in Sources */,
+				C83E4E971CF6889C00125794 /* ICSDiTuViewController.m in Sources */,
 				C87474501CF57CEC000BCB18 /* UIImage+Ex.m in Sources */,
 				C84E3A251CF44559000B81F2 /* ICSFistViewController.m in Sources */,
 			);
