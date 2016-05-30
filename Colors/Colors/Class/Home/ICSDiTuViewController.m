@@ -7,8 +7,12 @@
 //
 
 #import "ICSDiTuViewController.h"
+#import "ICSDrawerController.h"
 
-@interface ICSDiTuViewController ()
+@interface ICSDiTuViewController ()<ICSDrawerControllerPresenting>
+
+@property (strong, nonatomic) IBOutlet UIButton *openDrawerButton;
+@property (weak , nonatomic)ICSDrawerController * drawer;
 
 @end
 
@@ -17,14 +21,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    [self.openDrawerButton addTarget:self action:@selector(openDrawer:) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+- (void)openDrawer:(id)sender
+{
+    [self.drawer open];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)drawerControllerWillOpen:(ICSDrawerController *)drawerController
+{
+    self.view.userInteractionEnabled = NO;
+}
 
+- (void)drawerControllerDidClose:(ICSDrawerController *)drawerController
+{
+    self.view.userInteractionEnabled = YES;
+}
 /*
 #pragma mark - Navigation
 
