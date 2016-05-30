@@ -22,6 +22,7 @@
 		C83E4E971CF6889C00125794 /* ICSDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83E4E961CF6889C00125794 /* ICSDiTuViewController.m */; };
 		C84E3A211CF432F5000B81F2 /* ICSFistViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */; };
 		C84E3A251CF44559000B81F2 /* ICSFistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84E3A231CF44559000B81F2 /* ICSFistViewController.m */; };
+		C8685DF71CFBD493001070AA /* ICSDiTuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8685DF61CFBD493001070AA /* ICSDiTuViewController.storyboard */; };
 		C874744B1CF57CBC000BCB18 /* CZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C874744A1CF57CBC000BCB18 /* CZNavigationController.m */; };
 		C87474501CF57CEC000BCB18 /* UIImage+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C874744D1CF57CEC000BCB18 /* UIImage+Ex.m */; };
 		C87474511CF57CEC000BCB18 /* UIView+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C874744F1CF57CEC000BCB18 /* UIView+Ex.m */; };
@@ -56,6 +57,7 @@
 		C84E3A201CF432F5000B81F2 /* ICSFistViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ICSFistViewController.storyboard; sourceTree = "<group>"; };
 		C84E3A221CF44559000B81F2 /* ICSFistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSFistViewController.h; sourceTree = "<group>"; };
 		C84E3A231CF44559000B81F2 /* ICSFistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSFistViewController.m; sourceTree = "<group>"; };
+		C8685DF61CFBD493001070AA /* ICSDiTuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ICSDiTuViewController.storyboard; sourceTree = "<group>"; };
 		C87474491CF57CBC000BCB18 /* CZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNavigationController.h; sourceTree = "<group>"; };
 		C874744A1CF57CBC000BCB18 /* CZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNavigationController.m; sourceTree = "<group>"; };
 		C874744C1CF57CEC000BCB18 /* UIImage+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ex.h"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				C83E4E951CF6889C00125794 /* ICSDiTuViewController.h */,
 				C83E4E961CF6889C00125794 /* ICSDiTuViewController.m */,
+				C8685DF61CFBD493001070AA /* ICSDiTuViewController.storyboard */,
 			);
 			name = Home;
 			path = Colors/Class/Home;
@@ -556,6 +559,7 @@
 				C84E3A211CF432F5000B81F2 /* ICSFistViewController.storyboard in Resources */,
 				C874747C1CF58583000BCB18 /* ICSMainleftTableViewController.storyboard in Resources */,
 				5F0B654E18A3F09800DFB3C1 /* Images.xcassets in Resources */,
+				C8685DF71CFBD493001070AA /* ICSDiTuViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

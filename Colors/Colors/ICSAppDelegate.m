@@ -31,28 +31,27 @@
 #import "ICSPlainColorViewController.h"
 #import "ICSFistViewController.h"
 #import "ICSMainleftTableViewController.h"
-
+#import "ICSDiTuViewController.h"
 @implementation ICSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor redColor];
+    
     UIStoryboard *leftMainInterce1 = [UIStoryboard storyboardWithName:@"ICSMainleftTableViewController" bundle:nil];
     ICSMainleftTableViewController * leftInterface = [leftMainInterce1 instantiateViewControllerWithIdentifier:@"ICSMainleftTableViewController"];
+   
     UIStoryboard * fistftoryBord  = [UIStoryboard storyboardWithName:@"ICSFistViewController" bundle:nil];
     ICSFistViewController *icsFistViewController = [fistftoryBord instantiateViewControllerWithIdentifier:@"ICSFistViewController"];
+   
+    UIStoryboard *diTuStoryboard = [UIStoryboard storyboardWithName:@"ICSDiTuViewController" bundle:nil];
+    ICSDiTuViewController *diTuVC = [diTuStoryboard instantiateViewControllerWithIdentifier:@"ICSDiTuViewController"];
+    
     ICSDrawerController *drawer = [[ICSDrawerController alloc] initWithLeftViewController:leftInterface
-                                                                     centerViewController:icsFistViewController];
-    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:drawer];
-    self.window.rootViewController = nav;
+                                                                     centerViewController:diTuVC];
+    self.window.rootViewController = drawer;
     [self.window makeKeyAndVisible];
     return YES;
-}
-- (void)applicationWillResignActive:(UIApplication *)application {
-    [BMKMapView willBackGround];//当应用即将后台时调用，停止一切调用opengl相关的操作
-}
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    [BMKMapView didForeGround];//当应用恢复前台状态时调用，回复地图的渲染和opengl相关的操作
 }
 @end
